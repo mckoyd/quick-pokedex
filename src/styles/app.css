@@ -1,3 +1,13 @@
+@font-face {
+	font-family: 'PokeHollow';
+	src: url('../fonts/PokemonHollow.ttf') format('truetype')
+}
+
+@font-face {
+	font-family: 'PokeSolid';
+	src: url('../fonts/PokemonSolid.ttf') format('truetype')
+}
+
 .app {
     display: flex;
     flex-direction: column;
@@ -10,9 +20,16 @@
 
 .header .header-name {
     font-size: 3em;
-    color: white;
-    text-align: right;
+    color: gold;
+    text-align: left;
     padding: 0.3em;
+    letter-spacing: 0.05em;
+    font-family: 'PokeSolid';
+    text-shadow:
+		-2px -2px 0 #0550BE,
+		2px -2px 0 #0550BE,
+		-2px 2px 0 #0550BE,
+		2px 2px 0 #0550BE;
 }
 
 .main .search-form {
@@ -25,12 +42,14 @@
     border: 2px gold outset;
 }
 .main .search-form .search-btn {
-    background-color: #f98c84;
+    background-color: gold;
     border-radius: 5px;
     margin: 0 0.3em;
     font-size: 1em;
-    text-transform: uppercase;
-    border: 2px gold outset;
+    text-transform: lowercase;
+    border: 2px #0550BE outset;
+    font-family: 'PokeSolid';
+    letter-spacing: 0.1em;
 }
 
 .hidden {

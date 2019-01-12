@@ -1,3 +1,18 @@
+@font-face {
+	font-family: 'PokeHollow';
+	src: url('../fonts/PokemonHollow.ttf') format('truetype')
+}
+
+@font-face {
+	font-family: 'PokeSolid';
+	src: url('../fonts/PokemonSolid.ttf') format('truetype')
+}
+
+@font-face {
+	font-family: 'Flexo';
+	src: url('../fonts/Flexo.otf') format('opentype')
+}
+
 .weakness .double-damage-from .double-damage-from-types,
 .weakness .half-damage-from .half-damage-from-types,
 .weakness .no-damage-to .no-damage-to-types {
@@ -14,7 +29,8 @@
     margin: 0 0.2em 0.2em 0;
     border-radius: 5px;
     border: 2px gold outset;
-    text-transform: capitalize;
-    width: 4em;
+    width: 5em;
     text-align: center;
+    font-family: 'Flexo';
+    font-weight: bold;
 }

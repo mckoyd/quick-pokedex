@@ -6,6 +6,7 @@ import PokeWeaknesses from './PokeWeaknesses';
 import '../styles/poke-info.css'
 import PokeStrengths from './PokeStrengths';
 import PokeLocation from './PokeLocation';
+import { fetchLocation } from '../actions/location';
 
 export class PokeInfo extends React.Component {
     componentDidUpdate(){
@@ -13,7 +14,7 @@ export class PokeInfo extends React.Component {
             this.props.dispatch(fetchDamage(type.type.url))
             return null;
         })
-        
+        this.props.dispatch(fetchLocation(this.props.pokeInfo.location_area_encounters))
     }
     render(){
         const types = this.props.pokeInfo.types.map((type, i) => {
