@@ -13,9 +13,13 @@
 .poke-info .poke-details {
     display: flex;
     flex-direction: column;
-    padding: 0 0.3em;
+    padding: 0.2em .5em;
     text-align: right;
     align-items: flex-end;
+    background-color: rgba(115, 99, 107, 0.5);
+    border-radius: 5px;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .poke-info .poke-details .type-boxes {
