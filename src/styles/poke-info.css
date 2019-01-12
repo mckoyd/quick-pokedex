@@ -41,13 +41,14 @@
 .poke-info .poke-details {
     display: flex;
     flex-direction: column;
-    padding: .5em .5em;
+    padding: .5em;
     text-align: right;
     align-items: flex-end;
     background-color: rgba(80, 251, 142, 0.5);
     border-radius: 5px;
     width: 90%;
-    margin: 0 auto;
+    margin: 1em auto;
+    border: 2px blue outset;
 }
 
 .poke-info .poke-details .type-boxes {
@@ -85,3 +86,34 @@
     font-family: 'Flexo';
 }
 
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .header .header-name {
+        width: 80%;
+        font-size: 4em;
+    }
+    .main .search-form {
+        width: 80%;
+        font-size: 1.3em;
+    }
+    .poke-info .img-name {
+        width: 80%;
+    }
+    .poke-info .img-name .poke-name {
+        font-size: 2.2em;
+    }
+    .poke-info .poke-details {
+        width: 80%;
+        padding: 1.5em;
+    }
+    .poke-info .poke-details h3 {
+        font-size: 1.8em;
+    }
+    .poke-info .poke-details h4 {
+        font-size: 1.2em;
+    }
+    .poke-info .poke-details .type-boxes .poke-type .poke-type-name,
+    .poke-info .poke-details .weak-boxes .weakness .poke-type-name {
+        font-size: 1.3em;
+    }
+}

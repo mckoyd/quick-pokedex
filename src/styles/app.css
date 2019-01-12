@@ -29,24 +29,29 @@
 		-2px -2px 0 #0550BE,
 		2px -2px 0 #0550BE,
 		-2px 2px 0 #0550BE,
-		2px 2px 0 #0550BE;
+        2px 2px 0 #0550BE;
+    width: 90%;
+    margin: 0.5em auto;
 }
 
 .main .search-form {
     padding: 0.3em;
     display: flex;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .main .search-form .input-box {
     font-size: 1em;
     border: 2px gold outset;
+    width: 50%;
 }
 .main .search-form .search-btn {
     background-color: gold;
     border-radius: 5px;
     margin: 0 0.3em;
     font-size: 1em;
-    text-transform: lowercase;
+    text-transform: capitalize;
     border: 2px #0550BE outset;
     font-family: 'PokeSolid';
     letter-spacing: 0.1em;
@@ -67,3 +72,30 @@
     border-radius: 5px;
     width: 75%;
 }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .header .header-name {
+        width: 80%;
+        font-size: 4em;
+    }
+    .main .search-form {
+        width: 80%;
+        font-size: 1.3em;
+    }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .header .header-name {
+        width: 70%;
+        font-size: 5em;
+    }
+    .main .search-form {
+        width: 80%;
+        font-size: 1.3em;
+    }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

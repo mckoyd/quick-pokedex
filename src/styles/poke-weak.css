@@ -34,3 +34,12 @@
     font-family: 'Flexo';
     font-weight: bold;
 }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .weakness .double-damage-from .double-damage-from-types p,
+    .weakness .half-damage-from .half-damage-from-types p,
+    .weakness .no-damage-to .no-damage-to-types p {
+        font-size: 1.3em;
+    }
+}
