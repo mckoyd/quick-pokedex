@@ -22,7 +22,7 @@ export const fetchPokeInfoError = error => ({
 
 export const fetchPokeInfo = () => (dispatch, getState) => {
     dispatch(fetchPokeInfoRequest());
-    const searchTerm = getState().pokemon.pokeSearch
+    const searchTerm = getState().pokemon.pokeSearch.trim()
     fetch(`${API_BASE_URL}/${searchTerm}/`)
         .then(res => {
             if(!res.ok) dispatch(fetchPokeInfoError(res.statusText))
