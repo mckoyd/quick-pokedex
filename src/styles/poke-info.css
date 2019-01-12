@@ -1,0 +1,56 @@
+.poke-info .img-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.poke-info .img-name .poke-name {
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.8em;
+}
+
+.poke-info .poke-details {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0.3em;
+    text-align: right;
+    align-items: flex-end;
+}
+
+.poke-info .poke-details .type-boxes {
+    display: flex;
+}
+.poke-info .poke-details .type-boxes .poke-type {
+    padding: 0.15em;
+    margin: 0 0.2em 0.3em 0.2em;
+    border-radius: 5px;
+    border: 2px gold outset;
+    text-transform: capitalize;
+}
+
+.poke-info .poke-details .type-boxes .poke-type .poke-type-name,
+.poke-info .poke-details .weak-boxes .weakness .poke-type-name {
+    width: 4em;
+    text-align: center;
+}
+
+.poke-info .poke-details ul {
+    /* width: 10.5em; */
+}
+
+.poke-info .poke-details h3 {
+    font-size: 1.4em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 0.1em;
+}
+
+.poke-info .poke-details h4 {
+    font-size: 0.9em;
+    color: wheat;
+    text-transform: uppercase;
+    font-style: italic; 
+}
+

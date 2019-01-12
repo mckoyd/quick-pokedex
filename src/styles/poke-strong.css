@@ -1,0 +1,20 @@
+.strengths .double-damage-to .double-damage-to-types,
+.strengths .half-damage-to .half-damage-to-types,
+.strengths .no-damage-from .no-damage-from-types {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin: 0 0.2em 0.3em 0.2em;
+}
+
+.strengths .double-damage-to .double-damage-to-types p,
+.strengths .half-damage-to .half-damage-to-types p,
+.strengths .no-damage-from .no-damage-from-types p {
+    padding: 0.15em;
+    margin: 0 0.2em 0.2em 0;
+    border-radius: 5px;
+    border: 2px gold outset;
+    text-transform: capitalize;
+    width: 4em;
+    text-align: center;
+}

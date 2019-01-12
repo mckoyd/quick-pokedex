@@ -1,0 +1,10 @@
+.location .location-name {
+    color: white;
+    background-color: crimson;
+    padding: 0.3em;
+    border-radius: 5px;
+    border: 2px gold outset;
+    line-height: 1.2em;
+    margin: 0.3em 0;
+    text-align: center;
+}

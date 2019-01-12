@@ -1,0 +1,51 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.header .header-name {
+    font-size: 3em;
+    color: white;
+    text-align: right;
+    padding: 0.3em;
+}
+
+.main .search-form {
+    padding: 0.3em;
+    display: flex;
+    order: 9;
+}
+
+.main .search-form .input-box {
+    font-size: 1em;
+    border: 2px gold outset;
+}
+.main .search-form .search-btn {
+    background-color: #f98c84;
+    border-radius: 5px;
+    margin: 0 0.3em;
+    font-size: 1em;
+    text-transform: uppercase;
+    border: 2px gold outset;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.poke-not-found {
+    text-align: center;
+    margin: 0.5em auto;
+    padding: 0.5em;
+    font-size: 1.5em;
+    color: white;
+    background-color: rgb(122, 13, 35);
+    border: 1px white outset;
+    border-radius: 5px;
+    width: 75%;
+}
